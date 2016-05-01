@@ -1,6 +1,6 @@
 ---
 title       : Shiny Happy Mappy App Pitch
-subtitle    : Final Project, 5/1/2016
+subtitle    : Final Project - World Happiness Report Data
 author      : E. Bradley
 logo        : logo.png
 job         : Coursera Data Science
@@ -13,35 +13,55 @@ knit        : slidify::knit2slides
 ---
 
 ## Introduction
+* There is burgeoning interest in **happiness** being just as important of a metric as GDP. 
+* The World Happiness Report 2016 Update provides a CSV file of data for 156 countries from 2005-2015 (non-exhaustive).
+* The goal of this project is to present this data in an interactive form.
 
-1. Edit *YAML* front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
-```{r}
-summary(cars)
-```
-<img src='assets/img/jump.jpg'></img>
+http://worldhappiness.report/
 
---- .class #id bg:yellow
-## Data Source
-http://decastillo.github.io/googleVis_Tutorial/#11
-
-```
-
---- .class #id bg:yellow
-## Method
-
-
+<img src='assets/img/whr2016.png'></img>
 
 --- .class #id 
-## Next Steps and References
-Next Steps:
+## Methods
+In 2015, the country with the highest Happiness Index ("Life.Ladder")
+was Norway (7.6) and the lowest was Liberia (2.7).
+
+To understand the relationship between happiness and other metrics, the following steps were taken: 
+1. Pre-process data (import into R, merge w/ global region dataset, etc.) 
+2. Perform exploratory analysis (e.g. summary, etc.) 
+3. Create interactive charts using GoogleVis package 
+
+Summary for 2005-2015:
+```{r echo=FALSE}
+#library(xtable)
+file_csv<-"data_whr2016.csv"
+df<- read.csv(file_csv)
+summary(df[,c(4,5,7)])
+#df2015<-df[df$year==2015,c(2:4)]
+#df2 <- df2015[order(-df2015$Life.Ladder),] 
+```
+
+--- .class #id 
+## Interactive Chart
+```{r, echo = FALSE, message = FALSE, results = 'asis'}
+require(googleVis)
+M1 <- gvisMotionChart(df, idvar = "country", timevar = "year")
+plot(M1, tag = 'chart')
+```
+
+--- .class #id 
+## Next Steps
 * Incorporate multivariate regression for modeling happiness as a function of 
 country-level variables (e.g. GDP, life expectancy, etc.)
 * Add parallel coordinate plot to visualize the relationship between variables
+* Include additional country-level indices (http://index.gain.org/, etc.)
+* Explore finer spatial resolution datasets (state, county level) and sentiment analysis from social media
 
+--- .class #id 
+## References
 Inspiration:
-http://shiny.rstudio.com/gallery/google-charts.html
+* http://shiny.rstudio.com/gallery/google-charts.html
+* http://decastillo.github.io/googleVis_Tutorial/#11
 
 Images from: 
 1. (dog)https://www.flickr.com/photos/giusibarbiani/5892049786
