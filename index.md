@@ -3,7 +3,7 @@ title       : Shiny Happy Mappy App Pitch
 subtitle    : Final Project - World Happiness Report Data
 author      : E. Bradley
 logo        : logo.png
-job         : Coursera Data Science
+job         : Coursera Data Science - 1 May 2016
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -47,14 +47,14 @@ Summary for 2005-2015:
 --- .class #id 
 ## Interactive Chart
 <!-- MotionChart generated in R 3.2.2 by googleVis 0.5.10 package -->
-<!-- Sat Apr 30 23:37:24 2016 -->
+<!-- Sat Apr 30 23:49:46 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataMotionChartID20cb30c5d548 () {
+function gvisDataMotionChartID2148b465e0a () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -37037,15 +37037,15 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartMotionChartID20cb30c5d548() {
-var data = gvisDataMotionChartID20cb30c5d548();
+function drawChartMotionChartID2148b465e0a() {
+var data = gvisDataMotionChartID2148b465e0a();
 var options = {};
 options["width"] =    600;
 options["height"] =    500;
 options["state"] = "\n{\"xAxisOption\":\"4\",\"yAxisOption\":\"3\",\"sizeOption\":\"6\",\"dimensions\":{\"iconDimensions\":[\"dim0\"]}}\n";
 
     var chart = new google.visualization.MotionChart(
-    document.getElementById('MotionChartID20cb30c5d548')
+    document.getElementById('MotionChartID2148b465e0a')
     );
     chart.draw(data,options);
     
@@ -37069,9 +37069,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMotionChartID20cb30c5d548);
+callbacks.push(drawChartMotionChartID2148b465e0a);
 })();
-function displayChartMotionChartID20cb30c5d548() {
+function displayChartMotionChartID2148b465e0a() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -37095,11 +37095,11 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID20cb30c5d548"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID2148b465e0a"></script>
  
 <!-- divChart -->
   
-<div id="MotionChartID20cb30c5d548" 
+<div id="MotionChartID2148b465e0a" 
   style="width: 600; height: 500;">
 </div>
 
@@ -37117,6 +37117,3 @@ country-level variables (e.g. GDP, life expectancy, etc.)
 * http://stackoverflow.com
 * http://decastillo.github.io/googleVis_Tutorial
 * Logo from: https://commons.wikimedia.org/wiki/File:Happy-outline.svg 
-
---- .class #id 
-

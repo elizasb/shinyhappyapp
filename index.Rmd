@@ -3,7 +3,7 @@ title       : Shiny Happy Mappy App Pitch
 subtitle    : Final Project - World Happiness Report Data
 author      : E. Bradley
 logo        : logo.png
-job         : Coursera Data Science
+job         : Coursera Data Science - 1 May 2016
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -63,6 +63,3 @@ country-level variables (e.g. GDP, life expectancy, etc.)
 * http://stackoverflow.com
 * http://decastillo.github.io/googleVis_Tutorial
 * Logo from: https://commons.wikimedia.org/wiki/File:Happy-outline.svg 
-
---- .class #id 
-
