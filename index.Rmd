@@ -1,6 +1,6 @@
 ---
 title       : Shiny Happy Mappy App Pitch
-subtitle    : Final Project
+subtitle    : Final Project, 5/1/2016
 author      : E. Bradley
 logo        : logo.png
 job         : Coursera Data Science

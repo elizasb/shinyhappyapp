@@ -1,6 +1,6 @@
 ---
 title       : Shiny Happy Mappy App Pitch
-subtitle    : Final Project
+subtitle    : Final Project, 5/1/2016
 author      : E. Bradley
 logo        : logo.png
 job         : Coursera Data Science
@@ -62,14 +62,14 @@ Images from:
 --- .class #id 
 ## Chart
 <!-- MotionChart generated in R 3.2.2 by googleVis 0.5.10 package -->
-<!-- Sat Apr 30 21:29:11 2016 -->
+<!-- Sat Apr 30 21:59:30 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataMotionChartID1bd32b097560 () {
+function gvisDataMotionChartID1d3842598160 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -167,15 +167,15 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartMotionChartID1bd32b097560() {
-var data = gvisDataMotionChartID1bd32b097560();
+function drawChartMotionChartID1d3842598160() {
+var data = gvisDataMotionChartID1d3842598160();
 var options = {};
 options["width"] =    600;
 options["height"] =    500;
 options["state"] = "";
 
     var chart = new google.visualization.MotionChart(
-    document.getElementById('MotionChartID1bd32b097560')
+    document.getElementById('MotionChartID1d3842598160')
     );
     chart.draw(data,options);
     
@@ -199,9 +199,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMotionChartID1bd32b097560);
+callbacks.push(drawChartMotionChartID1d3842598160);
 })();
-function displayChartMotionChartID1bd32b097560() {
+function displayChartMotionChartID1d3842598160() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -225,10 +225,10 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID1bd32b097560"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID1d3842598160"></script>
  
 <!-- divChart -->
   
-<div id="MotionChartID1bd32b097560" 
+<div id="MotionChartID1d3842598160" 
   style="width: 600; height: 500;">
 </div>
