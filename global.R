@@ -19,13 +19,6 @@ reg[reg=="Pacific"]<-"Asia & Pacific"
 data$Region<-as.factor(reg)
 data$Year<-data$year
 #Latin America and Carribean together
-#Take out Antarctica
-
-# Country,Region,
-
-#filter that has data for 2013-2015, GDP, 
-
-#Merging with this data for regions (but is in caps)
 
 #graphics to plot
 #select year = 2015
@@ -33,4 +26,4 @@ data$Year<-data$year
 #Life.Ladder
 #Log.GDP.per.capita
 
-plot(data$Life.Ladder,data$Log.GDP.per.capita)
+#plot(data$Life.Ladder,data$Log.GDP.per.capita)
