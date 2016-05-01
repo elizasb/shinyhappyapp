@@ -43,6 +43,7 @@ summary(df[,c(4,5,7)])
 
 --- .class #id 
 ## Interactive Chart
+Shiny: https://eliza.shinyapps.io/ShinyHappyMappyApp/
 ```{r, echo = FALSE, message = FALSE, results = 'asis'}
 require(googleVis)
 M1 <- gvisMotionChart(df, idvar = "country", timevar = "year", xvar="Log.GDP.per.capita", sizevar="Healthy.life.expectancy.at.birth", yvar="Life.Ladder")
@@ -63,4 +64,3 @@ country-level variables (e.g. GDP, life expectancy, etc.)
 * http://stackoverflow.com
 * http://decastillo.github.io/googleVis_Tutorial
 * Logo from: https://commons.wikimedia.org/wiki/File:Happy-outline.svg 
---- .class #id 
