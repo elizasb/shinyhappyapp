@@ -1,0 +1,57 @@
+---
+title       : Shiny Happy Mappy App Pitch
+subtitle    : Final Project
+author      : E. Bradley
+logo        : logo.png
+job         : Coursera Data Science
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Introduction
+
+1. Edit *YAML* front matter
+2. Write using R Markdown
+3. Use an empty line followed by three dashes to separate slides!
+```{r}
+summary(cars)
+```
+<img src='assets/img/jump.jpg'></img>
+
+--- .class #id bg:yellow
+## Data Source
+http://decastillo.github.io/googleVis_Tutorial/#11
+
+```
+
+--- .class #id bg:yellow
+## Method
+
+
+
+--- .class #id 
+## Next Steps and References
+Next Steps:
+* Incorporate multivariate regression for modeling happiness as a function of 
+country-level variables (e.g. GDP, life expectancy, etc.)
+* Add parallel coordinate plot to visualize the relationship between variables
+
+Inspiration:
+http://shiny.rstudio.com/gallery/google-charts.html
+
+Images from: 
+1. (dog)https://www.flickr.com/photos/giusibarbiani/5892049786
+2. (sunrise)https://pixabay.com/en/youth-active-jump-happy-sunrise-570881/
+3. (logo)https://commons.wikimedia.org/wiki/File:Happy-outline.svg 
+
+--- .class #id 
+## Chart
+```{r, echo = FALSE, message = FALSE, results = 'asis'}
+require(googleVis)
+M1 <- gvisMotionChart(Fruits, idvar = "Fruit", timevar = "Year")
+plot(M1, tag = 'chart')
+```
