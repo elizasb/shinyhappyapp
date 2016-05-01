@@ -47,14 +47,14 @@ Summary for 2005-2015:
 --- .class #id 
 ## Interactive Chart
 <!-- MotionChart generated in R 3.2.2 by googleVis 0.5.10 package -->
-<!-- Sat Apr 30 23:49:46 2016 -->
+<!-- Sat Apr 30 23:50:50 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataMotionChartID2148b465e0a () {
+function gvisDataMotionChartID215e3f5876ad () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -37037,15 +37037,15 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartMotionChartID2148b465e0a() {
-var data = gvisDataMotionChartID2148b465e0a();
+function drawChartMotionChartID215e3f5876ad() {
+var data = gvisDataMotionChartID215e3f5876ad();
 var options = {};
 options["width"] =    600;
 options["height"] =    500;
 options["state"] = "\n{\"xAxisOption\":\"4\",\"yAxisOption\":\"3\",\"sizeOption\":\"6\",\"dimensions\":{\"iconDimensions\":[\"dim0\"]}}\n";
 
     var chart = new google.visualization.MotionChart(
-    document.getElementById('MotionChartID2148b465e0a')
+    document.getElementById('MotionChartID215e3f5876ad')
     );
     chart.draw(data,options);
     
@@ -37069,9 +37069,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMotionChartID2148b465e0a);
+callbacks.push(drawChartMotionChartID215e3f5876ad);
 })();
-function displayChartMotionChartID2148b465e0a() {
+function displayChartMotionChartID215e3f5876ad() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -37095,11 +37095,11 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID2148b465e0a"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID215e3f5876ad"></script>
  
 <!-- divChart -->
   
-<div id="MotionChartID2148b465e0a" 
+<div id="MotionChartID215e3f5876ad" 
   style="width: 600; height: 500;">
 </div>
 
@@ -37117,3 +37117,4 @@ country-level variables (e.g. GDP, life expectancy, etc.)
 * http://stackoverflow.com
 * http://decastillo.github.io/googleVis_Tutorial
 * Logo from: https://commons.wikimedia.org/wiki/File:Happy-outline.svg 
+--- .class #id 
