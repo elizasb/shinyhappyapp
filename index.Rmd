@@ -45,7 +45,7 @@ summary(df[,c(4,5,7)])
 ## Interactive Chart
 ```{r, echo = FALSE, message = FALSE, results = 'asis'}
 require(googleVis)
-M1 <- gvisMotionChart(df, idvar = "country", timevar = "year")
+M1 <- gvisMotionChart(df, idvar = "country", timevar = "year", xvar="Log.GDP.per.capita", sizevar="Healthy.life.expectancy.at.birth", yvar="Life.Ladder")
 plot(M1, tag = 'chart')
 ```
 
@@ -57,21 +57,12 @@ country-level variables (e.g. GDP, life expectancy, etc.)
 * Include additional country-level indices (http://index.gain.org/, etc.)
 * Explore finer spatial resolution datasets (state, county level) and sentiment analysis from social media
 
---- .class #id 
-## References
-Inspiration:
+### References
+* Data (CSV downloaded 4/27/2016): http://worldhappiness.report/
 * http://shiny.rstudio.com/gallery/google-charts.html
-* http://decastillo.github.io/googleVis_Tutorial/#11
-
-Images from: 
-1. (dog)https://www.flickr.com/photos/giusibarbiani/5892049786
-2. (sunrise)https://pixabay.com/en/youth-active-jump-happy-sunrise-570881/
-3. (logo)https://commons.wikimedia.org/wiki/File:Happy-outline.svg 
+* http://stackoverflow.com
+* http://decastillo.github.io/googleVis_Tutorial
+* Logo from: https://commons.wikimedia.org/wiki/File:Happy-outline.svg 
 
 --- .class #id 
-## Chart
-```{r, echo = FALSE, message = FALSE, results = 'asis'}
-require(googleVis)
-M1 <- gvisMotionChart(Fruits, idvar = "Fruit", timevar = "Year")
-plot(M1, tag = 'chart')
-```
+

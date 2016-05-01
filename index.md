@@ -47,14 +47,14 @@ Summary for 2005-2015:
 --- .class #id 
 ## Interactive Chart
 <!-- MotionChart generated in R 3.2.2 by googleVis 0.5.10 package -->
-<!-- Sat Apr 30 23:11:24 2016 -->
+<!-- Sat Apr 30 23:37:24 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataMotionChartID1fbe4dddea82 () {
+function gvisDataMotionChartID20cb30c5d548 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -37037,15 +37037,15 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartMotionChartID1fbe4dddea82() {
-var data = gvisDataMotionChartID1fbe4dddea82();
+function drawChartMotionChartID20cb30c5d548() {
+var data = gvisDataMotionChartID20cb30c5d548();
 var options = {};
 options["width"] =    600;
 options["height"] =    500;
-options["state"] = "";
+options["state"] = "\n{\"xAxisOption\":\"4\",\"yAxisOption\":\"3\",\"sizeOption\":\"6\",\"dimensions\":{\"iconDimensions\":[\"dim0\"]}}\n";
 
     var chart = new google.visualization.MotionChart(
-    document.getElementById('MotionChartID1fbe4dddea82')
+    document.getElementById('MotionChartID20cb30c5d548')
     );
     chart.draw(data,options);
     
@@ -37069,9 +37069,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMotionChartID1fbe4dddea82);
+callbacks.push(drawChartMotionChartID20cb30c5d548);
 })();
-function displayChartMotionChartID1fbe4dddea82() {
+function displayChartMotionChartID20cb30c5d548() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -37095,11 +37095,11 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID1fbe4dddea82"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID20cb30c5d548"></script>
  
 <!-- divChart -->
   
-<div id="MotionChartID1fbe4dddea82" 
+<div id="MotionChartID20cb30c5d548" 
   style="width: 600; height: 500;">
 </div>
 
@@ -37111,187 +37111,12 @@ country-level variables (e.g. GDP, life expectancy, etc.)
 * Include additional country-level indices (http://index.gain.org/, etc.)
 * Explore finer spatial resolution datasets (state, county level) and sentiment analysis from social media
 
---- .class #id 
-## References
-Inspiration:
+### References
+* Data (CSV downloaded 4/27/2016): http://worldhappiness.report/
 * http://shiny.rstudio.com/gallery/google-charts.html
-* http://decastillo.github.io/googleVis_Tutorial/#11
-
-Images from: 
-1. (dog)https://www.flickr.com/photos/giusibarbiani/5892049786
-2. (sunrise)https://pixabay.com/en/youth-active-jump-happy-sunrise-570881/
-3. (logo)https://commons.wikimedia.org/wiki/File:Happy-outline.svg 
+* http://stackoverflow.com
+* http://decastillo.github.io/googleVis_Tutorial
+* Logo from: https://commons.wikimedia.org/wiki/File:Happy-outline.svg 
 
 --- .class #id 
-## Chart
-<!-- MotionChart generated in R 3.2.2 by googleVis 0.5.10 package -->
-<!-- Sat Apr 30 23:11:34 2016 -->
 
-
-<!-- jsHeader -->
-<script type="text/javascript">
- 
-// jsData 
-function gvisDataMotionChartID1fbe47f54891 () {
-var data = new google.visualization.DataTable();
-var datajson =
-[
- [
- "Apples",
-2008,
-"West",
-98,
-78,
-20,
-"2008-12-31" 
-],
-[
- "Apples",
-2009,
-"West",
-111,
-79,
-32,
-"2009-12-31" 
-],
-[
- "Apples",
-2010,
-"West",
-89,
-76,
-13,
-"2010-12-31" 
-],
-[
- "Oranges",
-2008,
-"East",
-96,
-81,
-15,
-"2008-12-31" 
-],
-[
- "Bananas",
-2008,
-"East",
-85,
-76,
-9,
-"2008-12-31" 
-],
-[
- "Oranges",
-2009,
-"East",
-93,
-80,
-13,
-"2009-12-31" 
-],
-[
- "Bananas",
-2009,
-"East",
-94,
-78,
-16,
-"2009-12-31" 
-],
-[
- "Oranges",
-2010,
-"East",
-98,
-91,
-7,
-"2010-12-31" 
-],
-[
- "Bananas",
-2010,
-"East",
-81,
-71,
-10,
-"2010-12-31" 
-] 
-];
-data.addColumn('string','Fruit');
-data.addColumn('number','Year');
-data.addColumn('string','Location');
-data.addColumn('number','Sales');
-data.addColumn('number','Expenses');
-data.addColumn('number','Profit');
-data.addColumn('string','Date');
-data.addRows(datajson);
-return(data);
-}
- 
-// jsDrawChart
-function drawChartMotionChartID1fbe47f54891() {
-var data = gvisDataMotionChartID1fbe47f54891();
-var options = {};
-options["width"] =    600;
-options["height"] =    500;
-options["state"] = "";
-
-    var chart = new google.visualization.MotionChart(
-    document.getElementById('MotionChartID1fbe47f54891')
-    );
-    chart.draw(data,options);
-    
-
-}
-  
- 
-// jsDisplayChart
-(function() {
-var pkgs = window.__gvisPackages = window.__gvisPackages || [];
-var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
-var chartid = "motionchart";
-  
-// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
-var i, newPackage = true;
-for (i = 0; newPackage && i < pkgs.length; i++) {
-if (pkgs[i] === chartid)
-newPackage = false;
-}
-if (newPackage)
-  pkgs.push(chartid);
-  
-// Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMotionChartID1fbe47f54891);
-})();
-function displayChartMotionChartID1fbe47f54891() {
-  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
-  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
-  window.clearTimeout(window.__gvisLoad);
-  // The timeout is set to 100 because otherwise the container div we are
-  // targeting might not be part of the document yet
-  window.__gvisLoad = setTimeout(function() {
-  var pkgCount = pkgs.length;
-  google.load("visualization", "1", { packages:pkgs, callback: function() {
-  if (pkgCount != pkgs.length) {
-  // Race condition where another setTimeout call snuck in after us; if
-  // that call added a package, we must not shift its callback
-  return;
-}
-while (callbacks.length > 0)
-callbacks.shift()();
-} });
-}, 100);
-}
- 
-// jsFooter
-</script>
- 
-<!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID1fbe47f54891"></script>
- 
-<!-- divChart -->
-  
-<div id="MotionChartID1fbe47f54891" 
-  style="width: 600; height: 500;">
-</div>
